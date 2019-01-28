@@ -1,0 +1,16 @@
+﻿<Window x:Class="Tool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tool"
+        mc:Ignorable="d"
+        Title="TOPS Tool" Height="350" Width="525" >
+    <Grid>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="33,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="167"/>
+        <Button x:Name="button" Content="Trade ID" HorizontalAlignment="Left" Margin="254,65,0,0" VerticalAlignment="Top" Width="74" Click="button_Click"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="33,116,0,0" VerticalAlignment="Top" Height="68" Width="454" ItemsSource="{Binding}" AutoGenerateColumns="True" CanUserAddRows="False"/>
+        <Button x:Name="button1" Content="Reprocess" HorizontalAlignment="Left" Margin="33,216,0,0" VerticalAlignment="Top" Width="76" RenderTransformOrigin="1.388,-0.6" Click="button1_Click"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="254,216,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="68" Width="233"/>
+    </Grid>
+</Window>
